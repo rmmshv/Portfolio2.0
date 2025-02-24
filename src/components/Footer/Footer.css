@@ -1,0 +1,13 @@
+footer {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  footer p span {
+    font-weight: 700;
+    color: #D68D08;
+  }
