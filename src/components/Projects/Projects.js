@@ -14,17 +14,13 @@ const Projects = () => {
     setPlayingProject((prev) => (prev === index ? null : index)); // Toggle preview
   };
 
-  useEffect(() => {
-    if (marqueeRef.current) {
-      marqueeRef.current.classList.add("enable-animation");
-    }
-  }, []);
+  
 
   return (
     <section className="projects" id="projects">
       <div className="marquee-container">
         <div className="marquee-content">
-          {new Array(10).fill("Projects").map((text, index) => (
+          {new Array(15).fill("Projects").map((text, index) => (
             <h1 key={index}>{text}</h1>
           ))}
         </div>

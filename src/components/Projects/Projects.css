@@ -17,9 +17,9 @@
 .marquee-content {
     display: flex;
     gap: 2rem;
-    width: max-content;
+    min-width: 200%;
     animation: scroll 15s linear infinite; 
-    will-change: transform;
+    
 }
 
 .marquee-content h1 {
