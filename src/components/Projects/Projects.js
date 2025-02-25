@@ -89,7 +89,7 @@ const Projects = () => {
                 
                 <a 
                   className="preview-gif"
-                  title="Open demo"
+                  title="View demo"
                   onClick={() => handlePreviewToggle(index)}
                 >
                   {playingProject === index ? "close demo" : "demo"}

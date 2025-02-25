@@ -90,7 +90,8 @@
   .container-grid .project-card .project-title {
     text-align: center;
     font-family: 'Lemonmilk';
-    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 80px;
     display: inline-block;

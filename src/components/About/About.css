@@ -43,10 +43,12 @@
     display: inline-block;
     vertical-align: middle;
     color: #181818;
-    text-decoration: underline 2px #D68D08;
     padding-right: 5px;
   }
 
+  .about .about-links a span:hover {
+    text-decoration: underline 2px #D68D08;
+  }
   .about .about-links a:hover {
     transform: translateY(-5px);
   }
