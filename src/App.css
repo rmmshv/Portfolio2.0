@@ -34,98 +34,98 @@ main {
 
 .typescript {
   background-color: #2e72bb;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .expressjs {
   background-color: #3c4852;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 .nextjs {
   background-color: #000000;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 .reactjs {
   background-color: #08D626;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 .bash {
-  background-color: #294b6d;
-  color: #fff;
+  background-color: #c3d6e9;
+  color: #181818;
   border: 1px solid black;
 }
 
 .git {
   background-color: #e34c2f;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .nodejs {
   background-color: #11870E;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .javascript {
   background-color: #FFDF2F;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .css {
-  background-color: rgb(0, 17, 248);
-  color: #fff;
+  background-color: rgb(0, 217, 255);
+  color: #181818;
   border: 1px solid black;
 }
 .html {
   background-color: #ff3706;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .mongodb {
   background-color: #07ac4e;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .python {
   background-color: #2976c2;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .firebase {
   background-color: #E57F21;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .cryptography {
-  background-color: #c03a14;
-  color: #fff;
+  background-color: #fd9800;
+  color: #181818;
   border: 1px solid black;
 }
 
 .cplus {
   background-color: #8782e9;
-  color: #fff;
+  color: #181818;
   border: 1px solid black;
 }
 
 .figma {
-  background-color: #d400ff;
-  color: #fff;
+  background-color: #e387f5;
+  color: #181818;
   border: 1px solid black;
 }
 .readymag {
-  background-color: rgb(248, 0, 108);
-  color: #fff;
+  background-color: rgb(250, 141, 188);
+  color: #181818;
   border: 1px solid black;
 }
 
@@ -137,4 +137,5 @@ main {
 #dark .strapi, #dark .jwt, #dark .figma, #dark .readymag,
 #dark .python, #dark .bash, #dark .cryptography, #dark .cplus {
   border: 1px solid #F8F6F2; 
+  color: #181818;
 }

@@ -19,10 +19,11 @@ const projects = {
         description:
           "FONTer was build to organize and store fonts to use in development for easy visual reference and access.",
         technologies: [
-          "#React.js", "#HTML", "#CSS"
+          "#React.js","#JavaScript", "#HTML", "#CSS"
         ],
         github: "https://github.com/rmmshv/FONTer",
         demo: "https://fonter.vercel.app/#",
+        gifPreview: "/gifs/fonter.gif",
       },
       {
         title: "Ann Naimark.com",
@@ -33,6 +34,7 @@ const projects = {
         technologies: ["#Figma", "#React.js", "#HTML", "#CSS", "#ReadyMag"],
         //github: "#",
         demo: "https://annnaimark.com/",
+        gifPreview: "./gifs/ANNwebsite.gif",
       },
       {
         title: "Hibi",
@@ -43,6 +45,7 @@ const projects = {
         technologies: ["#JavaScript", "#HTML", "#CSS"],
         github: "https://github.com/rmmshv/Hibi",
         demo: "https://hibi.vercel.app/",
+        gifPreview: "/gifs/hibi.gif",
       },
       {
         title: "RSA encrypted wallet",
@@ -55,6 +58,7 @@ const projects = {
         ],
         github: "https://github.com/rmmshv/encrypted-wallet",
         //demo: "#",
+        gifPreview: "/gifs/fonter-preview.gif",
       },
     ],
   };

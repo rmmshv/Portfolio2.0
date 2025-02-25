@@ -1,69 +1,106 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./Projects.css";
 import { projects } from "../../data/portfolio";
 import getColorClass from "../../utils/getColorClass";
 
 const Projects = () => {
-  const { title, personalProjects } = projects;
+  const { personalProjects } = projects;
   const marqueeRef = useRef(null);
+  const [hoveredProject, setHoveredProject] = useState(null);
+  const [playingProject, setPlayingProject] = useState(null);
+
+  const handlePreviewToggle = (index) => {
+    setPlayingProject((prev) => (prev === index ? null : index)); // Toggle preview
+  };
 
   useEffect(() => {
-    // Add animation class once component mounts
     if (marqueeRef.current) {
       marqueeRef.current.classList.add("enable-animation");
     }
   }, []);
 
-  // fill marquee with words
-  const repeatedText = new Array(10).fill("Projects");
-
   return (
     <section className="projects" id="projects">
-      
       <div className="marquee-container">
         <div className="marquee-content">
-          {repeatedText.map((text, index) => (
+          {new Array(10).fill("Projects").map((text, index) => (
             <h1 key={index}>{text}</h1>
-          ))}
-          {/* dupe word for infinite loop */}
-          {repeatedText.map((text, index) => (
-            <h1 key={`dup-${index}`}>{text}</h1>
           ))}
         </div>
       </div>
 
       <div className="container-grid">
         {personalProjects.map((project, index) => (
-          <article className="project-card" key={index}>
+          <article
+            className="project-card"
+            key={index}
+            onMouseEnter={() => setHoveredProject(index)}
+            onMouseLeave={() => setHoveredProject(null)}
+          >
           <div className="project-content">
-            <h3 className="project-title">{project.title}</h3>
+            <h3 className="project-title">
+              <a 
+                href={project.demo} 
+                title="Visit website" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                {project.title}
+              </a>
+              {project.demo && (
+                <a 
+                  href={project.demo} 
+                  title="Visit website" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="external-link"
+                >
+                  <FaExternalLinkAlt className="icon" size={20} />
+                </a>
+              )}
+            </h3>
+
             <p className="project-description">{project.description}</p>
           </div>
-          
-          <div className="footer">
-            <div className="technology-stack">
-              {project.technologies.map((tech, index) => (
-                <span className={`${getColorClass(tech)}`} key={index}>
-                  {tech}
-                </span>
-              ))}
-            </div>
-            
-            <div className="project-links">
+
+            <div className="footer">
+              {/* GIF Preview appears above technology stack */}
+              {project.gifPreview && playingProject === index && (
+                <img
+                  src={project.gifPreview}
+                  alt={`${project.title} preview`}
+                  className="project-preview"
+                />
+              )}
+
+              {/* Technology Stack */}
+              <div className="technology-stack">
+                {project.technologies.map((tech, index) => (
+                  <span className={`${getColorClass(tech)}`} key={index}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Project Links */}
+              <div className="project-links">
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a href={project.github} title="Visit github" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="icon" size={25} />
                   </a>
                 )}
-                {project.demo && (
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                    <FaExternalLinkAlt className="icon" size={25} />
-                  </a>
-                )}
+                
+                <a 
+                  className="preview-gif"
+                  title="Open demo"
+                  onClick={() => handlePreviewToggle(index)}
+                >
+                  {playingProject === index ? "close demo" : "demo"}
+                </a>
               </div>
-          </div>
-        </article>
+            </div>
+          </article>
         ))}
       </div>
     </section>
