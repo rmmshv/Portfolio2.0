@@ -90,14 +90,12 @@
   .container-grid .project-card .project-title {
     text-align: center;
     font-family: 'Lemonmilk';
-    margin-top: 1rem;
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 80px;
     display: inline-block;
     vertical-align: middle;
     color: #181818;
-    
     padding-right: 5px;
   }
 
