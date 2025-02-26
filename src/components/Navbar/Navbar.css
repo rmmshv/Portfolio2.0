@@ -76,6 +76,9 @@
       font-weight: 500;
       cursor: pointer;
     }
+    .mobile-menu-toggle {
+      cursor: pointer;
+    }
     .mobile-menu-content li a {
       text-decoration: none;
       transition: all 0.2s ease-in-out;
