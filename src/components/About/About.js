@@ -15,7 +15,7 @@ const About = () => {
           <FaLinkedinIn className="icon" size={25} />
         </a>
         <a href={cv} target="_blank" rel="noopener noreferrer">
-          <span id="decor">Resume</span>
+          <span id="decor-resume">Resume</span>
           <FaExternalLinkAlt className="icon" size={20} />
         </a>
       </div>

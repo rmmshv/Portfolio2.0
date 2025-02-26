@@ -29,6 +29,9 @@
 #dark a{
   color: #F8F6F2;
 }
+#dark #decor {
+  color: #D68D08;
+}
 
 main {
   max-width: 1200px;
