@@ -87,13 +87,14 @@ const Projects = () => {
                   </a>
                 )}
                 
+                {project.demo && 
                 <a 
                   className="preview-gif"
                   title="View demo"
                   onClick={() => handlePreviewToggle(index)}
                 >
                   {playingProject === index ? "close demo" : "demo"}
-                </a>
+                </a>}
               </div>
             </div>
           </article>

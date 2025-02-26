@@ -76,7 +76,8 @@ const projects = {
           "#JavaScript",
           "#Python",
           "#C++",
-          "#Node.js"
+          "#Node.js",
+          "#Bash",
         ],
       },
       {
@@ -85,7 +86,7 @@ const projects = {
       },
       {
         title: "Others",
-        skills: ["#Git", "#Figma", "#Bash"],
+        skills: ["#Git", "#Figma"],
       },
     ],
   };
