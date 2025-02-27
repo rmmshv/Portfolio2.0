@@ -1,5 +1,9 @@
 const getColorClass = (tech) => {
     switch (tech) {
+      case "#GCP":
+        return "gcp";
+      case "#Rest APIs":
+        return "restAPI";
       case "#Bash":
         return "bash";
       case "#Cryptography":

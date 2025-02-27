@@ -140,6 +140,16 @@ main {
   color: #181818;
   border: 1px solid black;
 }
+.restAPI {
+  background-color: #f5d19a;
+  color: #181818;
+  border: 1px solid black;
+}
+.gcp {
+  background-color: #8fc0f0;
+  color: #181818;
+  border: 1px solid black;
+}
 
 /* make borders light when dark theme is on */
 #dark .typescript, #dark .expressjs, #dark .nextjs, #dark .reactjs, 
@@ -147,7 +157,8 @@ main {
 #dark .css, #dark .html, #dark .mongodb, #dark .postgresql, 
 #dark .firebase, #dark .jest, #dark .cicd, #dark .adobe-xd, 
 #dark .strapi, #dark .jwt, #dark .figma, #dark .readymag,
-#dark .python, #dark .bash, #dark .cryptography, #dark .cplus {
+#dark .python, #dark .bash, #dark .cryptography, #dark .cplus,
+#dark .restAPI, #dark .gcp {
   border: 1px solid #F8F6F2; 
   color: #181818;
 }

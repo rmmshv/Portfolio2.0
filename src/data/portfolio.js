@@ -86,7 +86,7 @@ const projects = {
       },
       {
         title: "Others",
-        skills: ["#Git", "#Figma"],
+        skills: ["#Git", "#Rest APIs", "#GCP", "#Figma"],
       },
     ],
   };
