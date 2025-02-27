@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaPlay, FaPlayCircle, FaRegPlayCircle } from "react-icons/fa";
 import "./Projects.css";
 import { projects } from "../../data/portfolio";
 import getColorClass from "../../utils/getColorClass";
@@ -94,6 +94,7 @@ const Projects = () => {
                   onClick={() => handlePreviewToggle(index)}
                 >
                   {playingProject === index ? "close demo" : "demo"}
+                  {/*<FaRegPlayCircle className='icon' size={18} /> */}
                 </a>}
               </div>
             </div>
