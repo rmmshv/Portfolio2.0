@@ -8,13 +8,17 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-links">
-        <a href={github} target="_blank" rel="noopener noreferrer">
+        <a href={github} title="Visit Github" target="_blank" rel="noopener noreferrer">
+          <span id="LinGitDecor">
           <FaGithub className="icon" size={25} />
+          </span>
         </a>
-        <a href={linkedin} target="_blank" rel="noopener noreferrer">
+        <a href={linkedin} title="Visit LinkedIn" target="_blank" rel="noopener noreferrer">
+          <span id="LinGitDecor">
           <FaLinkedinIn className="icon" size={25} />
+          </span>
         </a>
-        <a href={cv} target="_blank" rel="noopener noreferrer">
+        <a href={cv} title="Open resume" target="_blank" rel="noopener noreferrer">
           <span id="decor-resume">Resume</span>
           <FaExternalLinkAlt className="icon" size={20} />
         </a>

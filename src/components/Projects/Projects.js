@@ -36,25 +36,14 @@ const Projects = () => {
           >
           <div className="project-content">
             <h3 className="project-title">
-              <a 
-                href={project.demo} 
-                title="Visit website" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                {project.title}
-              </a>
+            
+            <a href={project.demo} title="Visit website" target="_blank" rel="noopener noreferrer">  
+              <span id="decor-resume">{project.title}</span>
               {project.demo && (
-                <a 
-                  href={project.demo} 
-                  title="Visit website" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="external-link"
-                >
-                  <FaExternalLinkAlt className="icon" size={20} />
-                </a>
+                <FaExternalLinkAlt className="icon" size={20} />
               )}
+          </a>
+              
             </h3>
 
             <p className="project-description">{project.description}</p>
@@ -82,7 +71,7 @@ const Projects = () => {
               {/* Project Links */}
               <div className="project-links">
                 {project.github && (
-                  <a href={project.github} title="Visit github" target="_blank" rel="noopener noreferrer">
+                  <a href={project.github} title="Visit Github" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="icon" size={25} />
                   </a>
                 )}

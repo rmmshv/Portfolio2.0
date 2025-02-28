@@ -30,7 +30,7 @@
   
   .about .about-links a {
     position: relative;
-    color: #D68D08;
+    
     align-items: center;
     font-size: 1.4rem;
     font-weight: 500;
@@ -44,6 +44,7 @@
     vertical-align: middle;
     color: #181818;
     padding-right: 5px;
+    text-decoration: underline 2px #D68D08;
   }
 
   .about .about-links a span:hover {
@@ -51,6 +52,9 @@
   }
   .about .about-links a:hover {
     transform: translateY(-5px);
+  }
+  #LinGitDecor {
+    color: #D68D08;
   }
   
   @media screen and (min-width: 320px) and (max-width: 480px) {

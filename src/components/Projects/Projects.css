@@ -74,7 +74,7 @@
   
   .container-grid .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: -6px 10px 0px 0px ;
+    box-shadow: -4px 8px 0px 0px ;
   }
   .container-grid .project-card:before {
     content: "";
@@ -96,17 +96,21 @@
     margin-bottom: 80px;
     display: inline-block;
     vertical-align: middle;
-    color: #181818;
+    color: #272727;
     padding-right: 5px;
   }
 
   .container-grid .project-card .project-title:hover {
     cursor: pointer;
-    text-decoration: underline 2px #D68D08;
+    transform: translateY(-5px);
   }
 
-  .container-grid .project-card .project-title a {
-    margin-left: 5px;
+  .container-grid .project-card .project-title a span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #272727;
+    padding-right: 5px;
+    text-decoration: underline 2px #D68D08;
   }
   
   .container-grid .project-card .project-description {
@@ -114,7 +118,7 @@
     line-height: 1.5;
     text-align: center;
   }
-
+  /* Skills */
   .container-grid .project-card .technology-stack {
     flex: 0.5; 
     font-weight: lighter;
@@ -130,7 +134,7 @@
   .container-grid .project-card .technology-stack span {
     margin-right: 10px;
     margin-bottom: 15px;
-    padding: 2px 5px 0px;
+    padding: 5px 5px 1px 5px;
     border-radius: 3px;
   }
   .footer {
@@ -140,7 +144,7 @@
     justify-content: flex-start;
     width: 100%;
   }
-  
+  /* links container bottom */
   .container-grid .project-links {
     font-size: 18px;
     vertical-align: middle;
