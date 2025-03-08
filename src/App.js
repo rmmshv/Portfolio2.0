@@ -37,6 +37,7 @@ return (
       <Skills />
     </main>
     <Footer />
+    <Analytics />
   </div>
 );
 };
