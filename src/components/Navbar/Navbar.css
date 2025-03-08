@@ -1,3 +1,4 @@
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -49,26 +50,26 @@
   
   /* mobile menu */
   
-  /* Make the nav links smaller on mobile */
+  /* make the nav links smaller on mobile */
   @media screen and (max-width: 768px) {
     .nav-list {
       font-size: 1rem;
-      gap: 5px; /* Reduce space between list items */
+      gap: 5px;
     }
   
     .nav-list li {
-      padding: 5px; /* Remove any extra padding */
-      margin: 0; /* Remove extra margins */
+      padding: 5px; 
+      margin: 0;
     }
   
     .nav-list li a {
-      font-size: 1rem; /* Make links smaller */
-      letter-spacing: 0.2px; /* Reduce spacing between letters */
-      word-spacing: -4px; /* Reduce spacing between words */
+      font-size: 1rem; 
+      letter-spacing: 0.2px; 
+      word-spacing: -4px; 
     }
   }
 
-/* Remove Mobile Menu Styles */
+/* remove mobile menu styles for now */
 .mobile-menu,
 .mobile-menu-content,
 .mobile-menu-toggle {

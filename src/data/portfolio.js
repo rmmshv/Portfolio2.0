@@ -17,7 +17,7 @@ const projects = {
         short:
           "Curated font & color collection",
         description:
-          "FONTer was build to organize and store fonts to use in development for easy visual reference and access.",
+          "FONTer was build to organize and store fonts and color palettes to use in development for easy visual reference and access.",
         technologies: [
           "#React.js","#JavaScript", "#HTML", "#CSS"
         ],

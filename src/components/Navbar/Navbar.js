@@ -4,11 +4,12 @@ import { MdLightMode, MdNightlight } from 'react-icons/md';
 
 const Navbar = ({ toggleTheme, theme }) => {
     const logo = "[Rimma Esheva]";
+    
     return (
         <header>
             <nav className='navbar'>
                 <div className='logo'>
-                    <h1>{logo}</h1>
+                    <a href="/"><h1>{logo}</h1></a>
                 </div>
                 <ul className='nav-list'>
                     <li>
