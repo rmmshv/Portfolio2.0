@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import './App.css';
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
     if (theme === 'light') {
