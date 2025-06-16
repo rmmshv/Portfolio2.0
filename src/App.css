@@ -1,170 +1,261 @@
 :root {
-  --light-theme-background: #F8F6F2;
-  --light-theme-color: #242424;
-  --dark-theme-background: #242424;
-  --dark-theme-color: #F8F6F2;
+    --light-theme-background: #F8F6F2;
+    --light-theme-color: #242424;
+    --dark-theme-background: #242424;
+    --dark-theme-color: #F8F6F2;
 }
 
 .app {
-  font-family: 'Code';
-  line-height: 1.0;
+    font-family: 'Code';
+    line-height: 1.0;
 }
 
 #light {
-  background-color: var(--light-theme-background);
-  color: var(--light-theme-color);
+    background-color: var(--light-theme-background);
+    color: var(--light-theme-color);
 }
 
 #dark {
-  background-color: var(--dark-theme-background);
-  color: var(--dark-theme-color);
+    background-color: var(--dark-theme-background);
+    color: var(--dark-theme-color);
 }
 
 #dark span {
-  color: #F8F6F2;
+    color: #F8F6F2;
 }
+
 #dark h3 {
-  color: #F8F6F2;
+    color: #F8F6F2;
 }
-#dark a{
-  color: #F8F6F2;
+
+#dark a {
+    color: #F8F6F2;
 }
+
 a:hover {
-  color:  #D68D08;
+    color: #D68D08;
 }
+
 #dark a:hover {
-  color:  #D68D08;
+    color: #D68D08;
 }
+
 #dark #decor {
-  color: #D68D08;
+    color: #D68D08;
 }
+
 #dark #LinGitDecor:hover {
-  color: #D68D08;
+    color: #D68D08;
+}
+
+#dark .navbar {
+    background: #181818;
+    color: #F8F6F2;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+#dark .logo h1 {
+    color: #D68D08;
+}
+
+#dark .nav-list li a {
+    color: #F8F6F2;
+}
+
+#dark .nav-list li:hover,
+#dark .nav-list li a:hover {
+    background: #23201b;
+    color: #D68D08;
+}
+
+
+/* --- About section dark theme --- */
+
+#dark .about {
+    background: #23201b;
+}
+
+#dark .about-container {
+    background: #181818;
+    color: #F8F6F2;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+}
+
+#dark .about-intro p {
+    color: #F8F6F2;
+}
+
+#dark .about-image img {
+    border: 2px solid #3a2e1a;
+    background: #23201b;
 }
 
 main {
-  max-width: 1200px;
-  width: 96%;
-  margin: 0 auto;
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto;
 }
+
 
 /* colors for tech skills */
 
 .typescript {
-  background-color: #2e72bb;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #bcc6d1;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .expressjs {
-  background-color: #3c4852;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #99c4e7;
+    color: #181818;
+    border: 1px solid black;
 }
+
 .nextjs {
-  background-color: #000000;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #000000;
+    color: #181818;
+    border: 1px solid black;
 }
+
 .reactjs {
-  background-color: #32b846ea;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #32b846ea;
+    color: #181818;
+    border: 1px solid black;
 }
+
 .bash {
-  background-color: #c3d6e9;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #c3d6e9;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .git {
-  background-color: #e64833;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #e64833;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .nodejs {
-  background-color:#abd1ae;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #abd1ae;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .javascript {
-  background-color: #FFDF2F;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #FFDF2F;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .css {
-  background-color: #86b3d1;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #86b3d1;
+    color: #181818;
+    border: 1px solid black;
 }
+
 .html {
-  background-color: #e64833;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #e64833;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .mongodb {
-  background-color: #07ac4e;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #07ac4e;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .python {
-  background-color: #2976c2;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #2976c2;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .firebase {
-  background-color: #E57F21;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #E57F21;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .cryptography {
-  background-color: #fd9800;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #fd9800;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .cplus {
-  background-color: #8782e9;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #8782e9;
+    color: #181818;
+    border: 1px solid black;
 }
 
 .figma {
-  background-color: #dc93eb;
-  color: #181818;
-  border: 1px solid black;
-}
-.readymag {
-  background-color: #f95ca4;
-  color: #181818;
-  border: 1px solid black;
-}
-.restAPI {
-  background-color: #f5d19a;
-  color: #181818;
-  border: 1px solid black;
-}
-.gcp {
-  background-color: #dcd9d0;
-  color: #181818;
-  border: 1px solid black;
+    background-color: #dc93eb;
+    color: #181818;
+    border: 1px solid black;
 }
 
+.readymag {
+    background-color: #f95ca4;
+    color: #181818;
+    border: 1px solid black;
+}
+
+.restAPI {
+    background-color: #f5d19a;
+    color: #181818;
+    border: 1px solid black;
+}
+
+.gcp {
+    background-color: #dcd9d0;
+    color: #181818;
+    border: 1px solid black;
+}
+
+.axios {
+    background-color: #ffc58c;
+    color: #181818;
+    border: 1px solid black;
+}
+
+.tailwindcss {
+    background-color: #38bdf8;
+    color: #181818;
+    border: 1px solid black;
+}
+
+
 /* make borders light when dark theme is on */
-#dark .typescript, #dark .expressjs, #dark .nextjs, #dark .reactjs, 
-#dark .mui, #dark .git, #dark .nodejs, #dark .javascript, 
-#dark .css, #dark .html, #dark .mongodb, #dark .postgresql, 
-#dark .firebase, #dark .jest, #dark .cicd, #dark .adobe-xd, 
-#dark .strapi, #dark .jwt, #dark .figma, #dark .readymag,
-#dark .python, #dark .bash, #dark .cryptography, #dark .cplus,
-#dark .restAPI, #dark .gcp {
-  border: 1px solid #F8F6F2; 
-  color: #181818;
+
+#dark .typescript,
+#dark .expressjs,
+#dark .nextjs,
+#dark .reactjs,
+#dark .mui,
+#dark .git,
+#dark .nodejs,
+#dark .javascript,
+#dark .css,
+#dark .html,
+#dark .mongodb,
+#dark .postgresql,
+#dark .firebase,
+#dark .jest,
+#dark .cicd,
+#dark .adobe-xd,
+#dark .strapi,
+#dark .jwt,
+#dark .figma,
+#dark .readymag,
+#dark .python,
+#dark .bash,
+#dark .cryptography,
+#dark .cplus,
+#dark .restAPI,
+#dark .gcp,
+#dark .axios,
+#dark .tailwindcss {
+    border: 1px solid #F8F6F2;
+    color: #181818;
 }
